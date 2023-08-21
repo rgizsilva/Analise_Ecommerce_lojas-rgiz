@@ -1,0 +1,63 @@
+Dicionário de dados
+
+
+Tabela Ordem:
+id_ordem - identificador da venda
+id_cliente - indentificador do cliente
+data - data da venda
+forma_pagamento - forma de pagamento da venda
+status - status que a venda se encontra(aprovada,pendente,cancelada)
+total - valor total da venda
+
+Tabela Ordem_produto
+id_ordem - identificador da venda
+id_cliente - indentificador do cliente
+sku_produto - indentificador do produto
+quantidade - quantidade de produto na venda
+
+Tabela Produto
+sku_produto - indentificador do produto
+nome_produto - nome do produto
+marca - marca do produto
+categoria - categoria do produto
+peso_kg - peso do produto em kg
+valor_unitário - valor unitário do produto
+
+Tabela Cliente
+id_cliente - indentificador do cliente
+endereco - endereço do cliente(estado)
+
+Tabela Estoque
+sku_produto - indentificador do produto
+quantidade - quantidade de produto no estoque
+data_entrada - data de entrada do produto no estoque
+
+Tabela Frete
+id - identificador do frete
+id_ordem - identificador da venda
+data_envio - data de envio do produto
+status - status da entrega (entregue, atrasado)
+data_entrega - data de entrega do produto
+valor - valor do frete
+
+Tabela Campanha_anuncios
+id - identificador da campanha
+data - data de inicio da campanha
+impressoes - número de visualizações da campanha
+cliques - número de cliques na campanha
+conversao - número de pessoas que converteram em venda
+orcamento_diário - orçamento gasto na campanha
+dispositivo - dispositivos que acessaram a campanha
+
+Tabela Feedback
+id - identificador do feedback
+sku_produto - indentificador do produto
+nota - nota do produto de 1 a 5 
+
+Tabela Devolucoes
+id - identificador geral
+id_ordem - identificador da venda
+id_cliente - indentificador do cliente
+data - data da devolução
+sku_produto - indentificador do produto
+quantidade - quantidade do produto devolvida
